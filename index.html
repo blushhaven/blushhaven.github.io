@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlushHaven - Makeup & Nail Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a2e0e6f91b.js" crossorigin="anonymous"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Open Sans', sans-serif; line-height: 1.6; color: #333; scroll-behavior: smooth; }
+    header { background: #f7e7f0; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 10; }
+    header img { height: 60px; vertical-align: middle; }
+    nav { margin-top: 10px; }
+    nav a { margin: 0 15px; color: #333; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #e91e63; }
+
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+    h2 { font-family: 'Playfair Display', serif; margin-bottom: 20px; color: #e91e63; }
+    
+    .services { display: flex; flex-wrap: wrap; gap: 20px; }
+    .service-card { flex: 1 1 45%; background: #fff0f6; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+
+    .portfolio img { width: 100%; border-radius: 10px; margin-bottom: 15px; }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;
+    }
+    .contact-form button {
+      background: #e91e63; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;
+    }
+    .contact-form button:hover { background: #c2185b; }
+
+    footer { background: #f7e7f0; text-align: center; padding: 20px; }
+    .socials a { margin: 0 10px; color: #e91e63; font-size: 20px; }
+
+    @media(max-width: 768px) {
+      .services { flex-direction: column; }
+      nav { display: flex; flex-wrap: wrap; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="BlushHaven Logo" />
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home">
+  <h2>Welcome to BlushHaven</h2>
+  <p>Your beauty destination for stunning makeup & elegant nails. Whether it's a wedding, party or a special occasion — we've got you covered at your place or ours.</p>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service-card">
+      <h3>Bridal Makeup</h3>
+      <p>Price: ₹15,000</p>
+    </div>
+    <div class="service-card">
+      <h3>Party Makeup</h3>
+      <p>Price: ₹3,000</p>
+    </div>
+    <div class="service-card">
+      <h3>Any Occasion Makeup</h3>
+      <p>Price: ₹3,000</p>
+    </div>
+    <div class="service-card">
+      <h3>Nail Extension</h3>
+      <p>Starting from ₹1,500</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About BlushHaven</h2>
+  <p>BlushHaven is Bangalore's top-rated professional makeup and nail extension studio. We specialize in modern makeup trends, bridal looks, and premium nail artistry. Our mobile and studio services ensure you look flawless wherever you are.</p>
+</section>
+
+<section id="portfolio">
+  <h2>Portfolio</h2>
+  <div class="portfolio">
+    <img src="https://via.placeholder.com/800x400?text=Makeup+Portfolio+1" alt="Work 1" />
+    <img src="https://via.placeholder.com/800x400?text=Makeup+Portfolio+2" alt="Work 2" />
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p><strong>Phone:</strong> <a href="https://wa.me/917363837502" target="_blank">+91 73638 37502 (WhatsApp)</a></p>
+  <p><strong>Email:</strong> <a href="mailto:info@blushhaven.in">info@blushhaven.in</a></p>
+  <p><strong>Address:</strong> T2, 3rd Floor, Shiva Shakthi Arcade, 2nd Main A Cross, Akshaya Garden, Akshayanagar, Bangalore, Karnataka - 560068</p>
+
+  <form class="contact-form" action="https://formspree.io/f/xpzvgknp" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 BlushHaven. All rights reserved.</p>
+  <div class="socials">
+    <a href="https://wa.me/917363837502" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://instagram.com/blushhaven" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+</footer>
+
+</body>
+</html>
