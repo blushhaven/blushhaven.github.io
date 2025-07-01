@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Disallow unnecessary directories (optional for SPA or single-page sites)
+Disallow: /admin/
+Disallow: /temp/
+Disallow: /backup/
+
+# Allow CSS, JS, images (important for visual rendering in search)
+Allow: /css/
+Allow: /js/
+Allow: /images/
